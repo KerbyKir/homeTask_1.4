@@ -9,18 +9,17 @@ public class Task1 {
 В результате программы вывод должен получиться следующий:
 1 2 3 4 5 6 7 8 9 10
 10 9 8 7 6 5 4 3 2 1 */
-        String textLine = ""; byte i = 1;
+        byte i = 1;
 
         while(i<=10) {
-            textLine = textLine +" "+i;
+            System.out.print(i + " ");
             i++;
         }
-        System.out.println(textLine.trim());
 
-        textLine = ""; i = 10;
+        System.out.print("\n");
+        i = 10;
         for(;i>=1;i--) {
-            textLine = textLine + " "+i;
+            System.out.print(i + " ");
         }
-        System.out.println(textLine.trim());
     }
 }

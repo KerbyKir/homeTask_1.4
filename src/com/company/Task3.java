@@ -13,12 +13,11 @@ public class Task3 {
 (из созданной ранее переменной) в качестве старта и 100 лет после в качестве завершения периода расчета.
 В результате решения задачи в консоль должен вывестись следующий результат:
 1896 1975 2054 */
-        int yearNow = 2021; String textOut="";
+        int yearNow = 2021;
         for(int i = (yearNow-200); i<=(yearNow+100); i++) {
             if(i%79==0) {
-                textOut=textOut+" "+i;
+                System.out.print(i + " ");
             }
         }
-        System.out.println(textOut.trim());
     }
 }

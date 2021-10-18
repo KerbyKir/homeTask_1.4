@@ -8,18 +8,25 @@ public class Task4 {
 вывести ping, а если число делится на 5 без остатка, вывести pong.
 Если число делится без остатка и на 3, и на 5, необходимо вывести ping pong.
 Допускается наличие пустых строк в выводе. */
-        int startNum = 1; int finishNum = 30; String textOut;
+        int startNum = 1;
+        int finishNum = 30;
         for(int i=startNum;i<=finishNum;i++) {
-            if(i%3==0 && i%5!=0) {
-                textOut="ping";
-            } else if(i%3!=0 && i%5==0) {
-                textOut="pong";
-            } else if (i%3==0 && i%5==0) {
-                textOut="ping pong";
-            } else {
-                textOut = "";
+            if(i%3==0) {
+                System.out.print("ping ");
             }
-            System.out.println(textOut);
+            else {
+                System.out.print("");
+            }
+
+            if(i%5==0) {
+                System.out.print("pong");
+            } else {
+                System.out.print("");
+            }
+
+            if(i!=finishNum) {
+                System.out.print("\n");
+            }
         }
     }
 }
