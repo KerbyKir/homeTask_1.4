@@ -14,14 +14,9 @@ public class Task4 {
             if(i%3==0) {
                 System.out.print("ping ");
             }
-            else {
-                System.out.print("");
-            }
 
             if(i%5==0) {
                 System.out.print("pong");
-            } else {
-                System.out.print("");
             }
 
             if(i!=finishNum) {
