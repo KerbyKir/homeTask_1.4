@@ -11,6 +11,7 @@ public class Task4 {
         int startNum = 1;
         int finishNum = 30;
         for(int i=startNum;i<=finishNum;i++) {
+            System.out.print(i+": ");
             if(i%3==0) {
                 System.out.print("ping ");
             }
